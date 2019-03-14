@@ -3,7 +3,7 @@ import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 
 @Injectable()
-export class OfertasService {
+export class OfertasOldService {
   constructor(private http: HttpClient) {}
 
   public ofertas: Array<Oferta> = [

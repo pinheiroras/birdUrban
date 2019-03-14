@@ -11,9 +11,10 @@ import { DiversaoComponent } from './diversao/diversao.component';
 import { RestaurantesComponent } from './restaurantes/restaurantes.component';
 import { RouterModule } from '@angular/router';
 import { ROUTES } from './app.routes';
+import { OfertaComponent } from './oferta/oferta.component';
 
 @NgModule({
-  declarations: [AppComponent, TopoComponent, HomeComponent, RodapeComponent, DiversaoComponent, RestaurantesComponent],
+  declarations: [AppComponent, TopoComponent, HomeComponent, RodapeComponent, DiversaoComponent, RestaurantesComponent, OfertaComponent],
   imports: [BrowserModule, HttpClientModule, RouterModule.forRoot(ROUTES)],
   providers: [],
   bootstrap: [AppComponent]
