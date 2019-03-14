@@ -7,30 +7,41 @@ import { URL_API } from "./oferta/oferta.api";
 
 @Injectable()
 export class OfertasService {
-  private url_api = `${URL_API}ofertas`;
-
   constructor(private http: HttpClient) {}
 
   public getOfertas(): Promise<Oferta[]> {
     return this.http
-      .get(`${this.url_api}?destaque=true`)
+      .get(`${URL_API}ofertas?destaque=true`)
       .toPromise()
       .then((resposta: any) => resposta);
   }
 
   public getOfertasPorCategoria(categoria: string): Promise<Oferta[]> {
     return this.http
-      .get(`${this.url_api}?categoria=${categoria}`)
+      .get(`${URL_API}ofertas?categoria=${categoria}`)
       .toPromise()
       .then((resposta: any) => resposta);
   }
 
   public getOfertaPorId(id: number): Promise<Oferta> {
     return this.http
-      .get(`${this.url_api}?id=${id}`)
+      .get(`${URL_API}ofertas?id=${id}`)
       .toPromise()
       .then((oferta: Oferta) => {
-        return oferta.shift();
+        return oferta[0];
+        //return oferta.shift();
+        //return oferta[0]    mesma coisa que o de cima
+      });
+  }
+
+  public getComoUsarOfertaPorId(id: number): Promise<string> {
+    return this.http
+      .get(`${URL_API}como-usar?id=${id}`)
+      .toPromise()
+      .then((resposta: any) => {
+        console.log(resposta);
+        return resposta[0].descricao;
+        //return oferta.shift();
         //return oferta[0]    mesma coisa que o de cima
       });
   }

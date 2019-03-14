@@ -35,12 +35,9 @@ corrigir logo o pag down, imagem fica passando. :D
 Issues :
 
 - Melhorar o acesso da URL via configuração (environments)
--
+- Criar backend (PwD or Ror)
 
 Commit :
+criado componente ondeFica e comoUsar
 
-Gerando rotas com snapshot e subscribe\n
-Exibindo a oferta dinamicamente\n
-Melhoria na URL do backend
-
-Aula : 130
+Aula : 135
