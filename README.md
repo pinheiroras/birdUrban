@@ -29,3 +29,18 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+corrigir logo o pag down, imagem fica passando. :D
+
+Issues :
+
+- Melhorar o acesso da URL via configuração (environments)
+-
+
+Commit :
+
+Gerando rotas com snapshot e subscribe\n
+Exibindo a oferta dinamicamente\n
+Melhoria na URL do backend
+
+Aula : 130
