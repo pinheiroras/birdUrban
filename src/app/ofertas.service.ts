@@ -45,4 +45,16 @@ export class OfertasService {
         //return oferta[0]    mesma coisa que o de cima
       });
   }
+
+  public getOndeFicaOfertaPorId(id: number): Promise<string> {
+    return this.http
+      .get(`${URL_API}onde-fica?id=${id}`)
+      .toPromise()
+      .then((resposta: any) => {
+        console.log(resposta);
+        return resposta[0].descricao;
+        //return oferta.shift();
+        //return oferta[0]    mesma coisa que o de cima
+      });
+  }
 }

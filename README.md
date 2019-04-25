@@ -35,9 +35,10 @@ corrigir logo o pag down, imagem fica passando. :D
 Issues :
 
 - Melhorar o acesso da URL via configuração (environments)
-- Criar backend (PwD or Ror)
+- Criar backend (PwD or RoR)
 
 Commit :
 criado componente ondeFica e comoUsar
+Campo pesquisa oferta
 
-Aula : 135
+Aula : 147
